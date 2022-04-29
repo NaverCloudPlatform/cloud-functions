@@ -16,7 +16,7 @@ Server(VPC)
 
 ---
 ## 사용법
-1. `npm install`
+1. `npm install --production`
 2. `zip -r action.zip *`
 3. [NCP Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드 후 실행
 
