@@ -1,0 +1,11 @@
+# zip-file for ncf action
+*.zip
+
+# IDE setting
+.idea
+
+# directory metadata
+.DS_Store
+
+# vscode config info
+.vscode
