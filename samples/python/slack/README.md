@@ -1,6 +1,6 @@
 # Slack 알림 발송 샘플 액션
 ## 연동 서비스 및 시나리오
-Slack
+### [Slack](https://slack.com/intl/ko-kr)
 + Cloud Functions GitHub Trigger를 이용하여, 특정 Repository에 commit 이력 발생한 경우 해당 정보를 Slack 특정 채널로 전송합니다.
 + [Slack Incoming Webhook](https://api.slack.com/messaging/webhooks#posting_with_webhooks) - Slack 채널에 대한 수신 Web Hook Url 생성 가이드
 + [Cloud Functions GitHub Trigger 가이드](https://guide.ncloud-docs.com/docs/compute-compute-15-2-1#%EB%B9%84%EB%8F%99%EA%B8%B0asynchronous-%EC%95%A1%EC%85%98-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0)
@@ -10,7 +10,7 @@ Slack
 + `slack_url` - Slack 특정 채널의 수신용 Web Hook Url
 
 ---
-### 사용법
+## 사용법
 1. 사용하고자 하는 런타임(python:3.6 또는 python:3.7)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성
 2. `zip -r action.zip *`
 3. [NCP Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성
