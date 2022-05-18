@@ -2,7 +2,11 @@
 ## 연동 서비스 및 시나리오
 ### [Slack](https://slack.com/intl/ko-kr)
 + Cloud Functions GitHub Trigger를 이용하여, 특정 Repository에 commit 이력 발생한 경우 해당 정보를 Slack 특정 채널로 전송합니다.
+
++ 200 OK 외의 Http Status Code를 응답 받거나, Http 통신 에러가 발생한 경우에는 `raise Exception`을 통해 에러 로그를 반환하고, 액션을 실패한 것으로 간주합니다.
+
 + [Slack Incoming Webhook](https://api.slack.com/messaging/webhooks#posting_with_webhooks) - Slack 채널에 대한 수신 Web Hook Url 생성 가이드
+
 + [Cloud Functions GitHub Trigger 가이드](https://guide.ncloud-docs.com/docs/compute-compute-15-2-1#%EB%B9%84%EB%8F%99%EA%B8%B0asynchronous-%EC%95%A1%EC%85%98-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0)
 
 ---
