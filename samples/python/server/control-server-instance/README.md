@@ -1,8 +1,15 @@
-# Server Instance 시작/정지 샘
+# Server Instance 시작/정지 샘플 액션
 ## 연동 상품
 ### Server
+
++ Server 상품 openAPI를 이용하여 서버 인스턴스를 시작 또는 정지하는 샘플 액션입니다.
+
++ 200 OK 외의 Http Status Code를 응답 받거나, Http 통신 에러가 발생한 경우에는 `raise Exception`을 통해 에러 로그를 반환하고, 액션을 실패한 것으로 간주합니다.
+
 + [Server 사용 가이드](https://guide.ncloud-docs.com/docs/compute-server-virtualmachineserver-overview-vpc)
+
 + [NCP API 사용 가이드(인증 헤더 생성)](https://api.ncloud-docs.com/docs/common-ncpapi)
+
 + [Server Instance Control API 가이드](https://api.ncloud-docs.com/docs/compute-vserver-server-startserverinstances)
 
 ---
