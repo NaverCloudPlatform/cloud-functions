@@ -51,9 +51,13 @@ def main(args):  # control vpc server instance
     )
     headers = make_header(timestamp, args["access_key"], sign_key)
 
-    res = requests.get(url, headers=headers)
+    try:
+        res = requests.get(url, headers=headers)
 
-    if res.status_code == 200:
-        return {"done": True}
-    else:
-        return {"done": False, "error_message": res.text}
+        if res.status_code == 200:
+            return {"done": True}
+        else:
+            raise Exception({"done": False, "error_message": res.text})
+            
+    except Exception as e:
+        raise Exception({"done": False, "error_message": str(e)})
