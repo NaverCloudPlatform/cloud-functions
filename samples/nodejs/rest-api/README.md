@@ -1,7 +1,7 @@
-# Cloud DB for MySQL - RestAPI BackEnd 구성 웹 액션 샘플
+# RestAPI BackEnd 구성 웹 액션 샘플
 ## 연동 서비스 및 시나리오
 ### Cloud DB for MySQL(VPC)
-+ [Cloud DB for MySQL과 Cloud Functions를 활용한 DB 구성 및 CRUD 샘플 액션]()과 이어지는 내용입니다.
++ [Cloud DB for MySQL과 Cloud Functions를 활용한 DB 구성 및 CRUD 샘플 액션](https://github.com/NaverCloudPlatform/cloud-functions/tree/master/samples/nodejs/mysql/db-crud)과 이어지는 내용입니다.
 
 + HTTP Rest API를 활용하여, 구성한 DB에 학생 정보를 추가하거나 조회, 삭제, 갱신 등(CRUD)을 수행합니다.
 
