@@ -18,12 +18,12 @@ const iotDataSchema = mongoose.Schema({
 const iotData = mongoose.model('iotdata', iotDataSchema);
 
 async function getDeviceInfo(deviceId) {
-  const deviceInfo = await redisClient.hget('devcieId', deviceId);
-
+  const deviceInfo = await redisClient.hGet('deviceId', deviceId);
   return JSON.parse(deviceInfo);
 }
 
 async function saveIotData(params) {
+  console.log({...params});
   try {
     redisClient = redis.createClient({
       url: params.redisUrl,
@@ -32,7 +32,7 @@ async function saveIotData(params) {
     await redisClient.connect();
     await mongoose.connect(params.mongoUrl);
 
-    const deviceInfo = getDeviceInfo(params.deviceId);
+    const deviceInfo = await getDeviceInfo(params.deviceId);
     const iotDataDoc = new iotData({ ...deviceInfo, ...params });
 
     await iotDataDoc.save();
