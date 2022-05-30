@@ -17,16 +17,16 @@
 
 + 보다 상세한 내용과 가이드는 각 샘플 별 `README.md`를 통해서 확인하실 수 있습니다.
 
-| 샘플 | 연동 서비스 |
-|---|---|
-| iot | [Cloud IoT Core](https://www.ncloud.com/product/iot/cloudIotCore), [Cloud DB for Redis](https://www.ncloud.com/product/database/cloudDbRedis), [Cloud DB for MongoDB](https://www.ncloud.com/product/database/cloudDbMongoDB) |
-| mongodb | [Cloud DB for MongoDB](https://www.ncloud.com/product/database/cloudDbMongoDB) |
-| mysql | [Cloud DB for MySQL](https://www.ncloud.com/product/database/cloudDbMysql) |
-| object-storage | [Object Storage](https://www.ncloud.com/product/storage/objectStorage) |
-| redis | [Cloud DB for Redis](https://www.ncloud.com/product/database/cloudDbRedis) |
-| rest-api | [Cloud DB for MySQL](https://www.ncloud.com/product/database/cloudDbMysql) |
-| server | [Server](https://www.ncloud.com/product/compute/server) |
-| slack | [Slack](https://slack.com/intl/ko-kr/)(NCP 외부 서비스) |
+| 샘플 | 설명 | 연동 서비스 | 바로가기 |
+|---|---|---|---|
+| iot | Cloud IoT Core 데이터 보강 및 저장 샘플 액션 | [Cloud IoT Core](https://www.ncloud.com/product/iot/cloudIotCore)<br/>[Cloud DB for Redis](https://www.ncloud.com/product/database/cloudDbRedis)<br/>[Cloud DB for MongoDB](https://www.ncloud.com/product/database/cloudDbMongoDB) | [NodeJS](./nodejs/iot/index.js) <br/>[Python](./python/iot/__main__.py) |
+| mongodb | MongoDB 데이터 저장 샘플 액션 | [Cloud DB for MongoDB](https://www.ncloud.com/product/database/cloudDbMongoDB) | [NodeJS](./nodejs/mongodb/index.js) <br/>[Python](./python/mongodb/__main__.py) |
+| mysql | MySQL 데이터 CRUD 수행 샘플 액션 | [Cloud DB for MySQL](https://www.ncloud.com/product/database/cloudDbMysql) | [NodeJS](./nodejs/mysql/db-crud) <br/>[Python](./python/mysql/db-crud) |
+| object-storage | 버킷/오브젝트 생성/조회/삭제 샘플 액션 | [Object Storage](https://www.ncloud.com/product/storage/objectStorage) | [NodeJS](./nodejs/object-storage) <br/>[Python](./python/object-storage) |
+| redis | Redis 데이터 저장 샘플 액션 | [Cloud DB for Redis](https://www.ncloud.com/product/database/cloudDbRedis) | [NodeJS](./nodejs/redis/index.js) <br/>[Python](./python/redis/__main__.py) |
+| rest-api | RestAPI BackEnd 구성 웹 액션 샘플 | [Cloud DB for MySQL](https://www.ncloud.com/product/database/cloudDbMysql) | [NodeJS](./nodejs/rest-api/index.js) <br/>[Python](./python/rest-api/__main__.py) |
+| server | Server Instance 시작/정지 샘플 액션 | [Server](https://www.ncloud.com/product/compute/server) | [NodeJS](./nodejs/server/control-server-instance/index.js) <br/>[Python](./python/server/control-server-instance/__main__.py) |
+| slack | Slack 알림 발송 샘플 액션 | [Slack](https://slack.com/intl/ko-kr/)(NCP 외부 서비스) | [NodeJS](./nodejs/slack/index.js) <br/>[Python](./python/slack/__main__.py) |
 
 <br></br>
 ## 참고자료
