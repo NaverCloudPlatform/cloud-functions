@@ -8,7 +8,7 @@
 
 + [Server 사용 가이드](https://guide.ncloud-docs.com/docs/compute-server-virtualmachineserver-overview-vpc)
 
-+ [NCP API 사용 가이드(인증 헤더 생성)](https://api.ncloud-docs.com/docs/common-ncpapi)
++ [NAVER Cloud Platform API 사용 가이드(인증 헤더 생성)](https://api.ncloud-docs.com/docs/common-ncpapi)
 
 + [Server Instance Control API 가이드](https://api.ncloud-docs.com/docs/compute-vserver-server-startserverinstances)
 
@@ -17,8 +17,8 @@
 + `base_url` - 서버 인스턴스 제어 API 가이드 참조 필요
 + `api_url` -  서버 인스턴스 제어 API 가이드 참조 필요
   + 서버 인스턴스 Id 목록인 `serverInstances`와 함께 엔드포인트 구성하여, 암호화 서명(singKey) 생성하는데 이용됩니다.
-+ `access_key` - NCP API 인증키 정보로, `[NCP포털](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
-+ `secret_key` - NCP API 인증키 정보로, `[NCP포털](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
++ `access_key` - NAVER Cloud Platform API 인증키 정보로, `[NAVER Cloud Platform](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
++ `secret_key` - NAVER Cloud Platform API 인증키 정보로, `[NAVER Cloud Platform](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
 + `server_instances` - 시작/정지 대상인 서버 인스턴스 Id 목록(`ex. server_instances: [11111111, 22222222]`)
   + API 엔드포인트의 파라미터 값을 구성합니다.
 
@@ -27,7 +27,7 @@
 1. 사용하고자 하는 런타임(python:3.6 또는 python:3.7)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성
    + 본 샘플 액션에서 이용되는 라이브러리들은 파이썬 런타임에서 기본적으로 제공되고 있으므로 `.zip` 파일 업로드가 아니라, 코드만을 콘솔 에디터에 `복사-붙여넣기`하여 액션을 생성 및 실행할 수도 있습니다.
 2. `zip -r action.zip *`
-3. [NCP Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성
+3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성
 
 ---
 ## 액션 실행 결과 확인

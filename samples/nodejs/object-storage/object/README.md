@@ -10,13 +10,13 @@
 ---
 ## 액션 Input Parameter
 ### Object Storage 접근을 위한 공통 Input Parameter
-+ `accessKey` - NCP API 인증키 정보로, `[NCP포털](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
-+ `secretKey` - NCP API 인증키 정보로, `[NCP포털](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
++ `accessKey` - NAVER Cloud Platform API 인증키 정보로, `[NAVER Cloud Platform](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
++ `secretKey` - NAVER Cloud Platform API 인증키 정보로, `[NAVER Cloud Platform](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
 
 ### 오브젝트 생성(upload-object)
-+ `bucketName` - 오브젝트(본 샘플에서는 `ncp_image.jpeg`라는 이미지 파일을 활용합니다.)를 업로드할 버킷의 이름
++ `bucketName` - 오브젝트(본 샘플에서는 `ncloud_image.jpeg`라는 이미지 파일을 활용합니다.)를 업로드할 버킷의 이름
 + `objectName` - 버킷에 업로드 및 표시될 오브젝트 이름
-  + 예를들어, 로컬에서 `ncp_image.jpeg`라는 이미지 파일을, `img-of-ncp.jpeg`라는 이름의 오브젝트로 업로드 할 수 있습니다.
+  + 예를들어, 로컬에서 `ncloud_image.jpeg`라는 이미지 파일을, `img-of-ncloud.jpeg`라는 이름의 오브젝트로 업로드 할 수 있습니다.
   + S3의 putObject, deleteObject 등의 API의 `Key` 옵션으로 이용되어, 생성 또는 삭제 대상 오브젝트를 지정하는 역할을 합니다.
 
 ### 오브젝트 목록 조회(list-object)
@@ -29,8 +29,8 @@
 ---
 ## 사용법
 1. `npm install --production`
-2. `zip -r action.zip *` - 오브젝트 생성 액션(create-object)의 경우 업로드려는 이미지(`ncp_image.jpeg`)도 함께 압축을 진행합니다.
-3. [NCP Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드
+2. `zip -r action.zip *` - 오브젝트 생성 액션(create-object)의 경우 업로드려는 이미지(`ncloud_image.jpeg`)도 함께 압축을 진행합니다.
+3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드
 
 ---
 ## 액션 실행 결과 확인

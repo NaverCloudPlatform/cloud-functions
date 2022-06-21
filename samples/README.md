@@ -1,6 +1,6 @@
 # Cloud Functions
 ## Cloud Functions Sample
-+ 네이버 클라우드 플랫폼(NCP)의 Cloud Functions 서비스를 활용할 수 있는 간단한 샘플 액션들입니다.
++ 네이버 클라우드 플랫폼(NAVER Cloud Platform)의 Cloud Functions 서비스를 활용할 수 있는 간단한 샘플 액션들입니다.
 
 + 다른 다양한 서비스들과 함께 Cloud Functions를 활용할 수 있는 여러 시나리오에 대해서, 샘플 액션들이 제공되고 있습니다.
 
@@ -13,7 +13,7 @@
 <br></br>
 
 ## Sample Scenario
-+ 제공되는 샘플들과, Cloud Functions와 연동되는 NCP 서비스 또는 외부 서비스(ex. Slack)은 다음과 같습니다.
++ 제공되는 샘플들과, Cloud Functions와 연동되는 NAVER Cloud Platform 서비스 또는 외부 서비스(ex. Slack)은 다음과 같습니다.
 
 + 보다 상세한 내용과 가이드는 각 샘플 별 `README.md`를 통해서 확인하실 수 있습니다.
 
@@ -26,7 +26,7 @@
 | redis | Redis 데이터 저장 샘플 액션 | [Cloud DB for Redis](https://www.ncloud.com/product/database/cloudDbRedis) | [NodeJS](./nodejs/redis/index.js) <br/>[Python](./python/redis/__main__.py) |
 | rest-api | RestAPI BackEnd 구성 웹 액션 샘플 | [Cloud DB for MySQL](https://www.ncloud.com/product/database/cloudDbMysql) | [NodeJS](./nodejs/rest-api/index.js) <br/>[Python](./python/rest-api/__main__.py) |
 | server | Server Instance 시작/정지 샘플 액션 | [Server](https://www.ncloud.com/product/compute/server) | [NodeJS](./nodejs/server/control-server-instance/index.js) <br/>[Python](./python/server/control-server-instance/__main__.py) |
-| slack | Slack 알림 발송 샘플 액션 | [Slack](https://slack.com/intl/ko-kr/)(NCP 외부 서비스) | [NodeJS](./nodejs/slack/index.js) <br/>[Python](./python/slack/__main__.py) |
+| slack | Slack 알림 발송 샘플 액션 | [Slack](https://slack.com/intl/ko-kr/)(NAVER Cloud Platform 외부 서비스) | [NodeJS](./nodejs/slack/index.js) <br/>[Python](./python/slack/__main__.py) |
 
 <br></br>
 ## 참고자료

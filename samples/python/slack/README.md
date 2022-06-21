@@ -17,7 +17,7 @@
 ## 사용법
 1. 사용하고자 하는 런타임(python:3.6 또는 python:3.7)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성
 2. `zip -r action.zip *`
-3. [NCP Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성
+3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성
 4. GitHub Trigger 생성 - 개인 Git Repository와 personal access token 필요
 5. Action과 Trigger 간 연결 진행
 

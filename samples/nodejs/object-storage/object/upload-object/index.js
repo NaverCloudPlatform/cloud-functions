@@ -19,7 +19,7 @@ function uploadObject(params) {
       Bucket: params.bucketName,
       Key: params.objectName,
       ACL: 'public-read',
-      Body: fs.createReadStream('./ncp_image.jpeg'),
+      Body: fs.createReadStream('./ncloud_image.jpeg'),
     })
       .promise()
       .then(() => {
