@@ -56,7 +56,7 @@
 ## 사용법
 1. `npm install --production`
 2. `zip -r action.zip *`
-3. [NCP Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드
+3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드
 4. 상기 `액션 Input Parameter`를 참고하여, 브라우저나 [Postman](https://www.postman.com)과 같은 도구를 활용하여 웹 액션을 호출할 수 있습니다.
 
 ---

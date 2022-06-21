@@ -13,7 +13,7 @@
 ### 사용법
 1. `npm install --production`
 2. `zip -r action.zip *`
-3. [NCP Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드 후 실행
+3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드 후 실행
 4. GitHub Trigger 생성 - 개인 git repository와 personal access token 필요
 5. action과 trigger 연결
 

@@ -55,7 +55,7 @@
 ## 사용법
 1. 사용하고자 하는 런타임(python:3.6 또는 python:3.7)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성 및 활성화(activate)
 2. python으로 MySQL 접근 및 작업을 위한 `PyMySQL` 라이브러리 설치 - **pip install pymysql**
-3. [NCP Console](console.ncloud.com) VPC Platform에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성
+3. [NAVER Cloud Platform Console](console.ncloud.com) VPC Platform에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성
 
 ---
 ## 액션 실행 결과 확인

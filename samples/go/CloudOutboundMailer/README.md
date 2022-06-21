@@ -1,4 +1,4 @@
-## NCP-Cloud Outbound Mailer 연동하기
+## NAVER Cloud Platform - Cloud Outbound Mailer 연동하기
 
 ### 메일 보내기
 

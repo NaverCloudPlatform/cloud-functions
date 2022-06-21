@@ -12,8 +12,8 @@
 ---
 ## 액션 Input Parameter
 ### Object Storage 접근을 위한 공통 Input Parameter
-+ `accessKey` - NCP API 인증키 정보로, `[NCP포털](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
-+ `secretKey` - NCP API 인증키 정보로, `[NCP포털](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
++ `accessKey` - NAVER Cloud Platform API 인증키 정보로, `[NAVER Cloud Platform](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
++ `secretKey` - NAVER Cloud Platform API 인증키 정보로, `[NAVER Cloud Platform](ncloud.com)- 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
 
 ### 버킷 생성(create-bucket)
 + `bucketName` - 생성할 버킷의 이름
@@ -28,7 +28,7 @@
 ## 사용법
 1. `npm install --production`
 2. `zip -r action.zip *`
-3. [NCP Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드
+3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드
 4. 버킷의 생성 또는 삭제 액션을 실행할 경우, 대상이 되는 버킷의 이름(bucketName)을 입력하여 실행합니다.
 
 ---

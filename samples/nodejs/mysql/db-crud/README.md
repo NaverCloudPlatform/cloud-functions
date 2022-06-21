@@ -44,7 +44,7 @@
 ## 사용법
 1. `npm install --production`
 2. `zip -r action.zip *`
-3. [NCP Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드
+3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드
 4. 상기 `액션 Input Parameter`를 참고하여, Cloud DB for MySQL 서버 생성과 각 액션 별 요구되는 Input Parameter 입력 후 실행할 수 있습니다.
 
 ---
