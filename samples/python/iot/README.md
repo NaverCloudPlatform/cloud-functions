@@ -77,7 +77,7 @@
 
 ---
 ## 액션 실행 결과 확인
-+ [Cloud IoT Core 가이드](https://guide.ncloud-docs.com/docs/cloudiotcore-console)를 참조하여 준비 및 작성한, 메시지 발행 샘플 코드를 실행합니다.
++ [Cloud IoT Core 가이드](https://guide.ncloud-docs.com/docs/cloudiotcore-overview)를 참조하여 준비 및 작성한, 메시지 발행 샘플 코드를 실행합니다.
 
 + 발행된 메시지는 지정된 토픽으로 전달되고, 이어서 Cloud Functions IoT 트리거를 거쳐서 액션으로 전달되게 됩니다.
 
