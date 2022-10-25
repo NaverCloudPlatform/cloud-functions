@@ -1,17 +1,13 @@
 const mysql = require('mysql');
-let conn;
 
 function createTable(params) {
   return new Promise((resolve, reject) => {
-    if (!conn) {
-      conn = mysql.createConnection({
-        host: params.cdbHost,
-        user: params.cdbUser,
-        password: params.cdbPass,
-        database: params.cdbDatabase,
-      });
-      conn.connect();
-    }
+    const conn = mysql.createConnection({
+      host: params.cdbHost,
+      user: params.cdbUser,
+      password: params.cdbPass,
+      database: params.cdbDatabase,
+    });
 
     const query = `CREATE TABLE ${params.cdbTable}(
                       studentId INT NOT NULL,
