@@ -1,17 +1,13 @@
 const mysql = require('mysql');
-let conn;
 
 function insertStudent(params) {
   return new Promise((resolve, reject) => {
-    if (!conn) {
-      conn = mysql.createConnection({
-        host: params.cdbHost,
-        user: params.cdbUser,
-        password: params.cdbPass,
-        database: params.cdbDatabase,
-      });
-      conn.connect();
-    }
+    const conn = mysql.createConnection({
+      host: params.cdbHost,
+      user: params.cdbUser,
+      password: params.cdbPass,
+      database: params.cdbDatabase,
+    });
 
     const query = `INSERT INTO ${params.cdbTable}(studentId, name, age)
                        VALUES(${params.studentId}, '${params.name}', ${params.age})`;
