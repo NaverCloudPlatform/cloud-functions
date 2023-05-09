@@ -4,6 +4,16 @@ service_name = "s3"
 endpoint = "https://kr.object.ncloudstorage.com"
 
 
+"""
+Action to query all Object Storage buckets
+
+Input parameters that must be defined as action parameters
+args:
+    access_key (str): NAVER Cloud Platform account access key used for API authentication
+    secret_key (str): NAVER Cloud Platform account secret key used for API authentication
+"""
+
+
 def main(args):
     try:
         s3 = boto3.client(

@@ -22,6 +22,16 @@ async function getDeviceInfo(deviceId) {
   return JSON.parse(deviceInfo);
 }
 
+/**
+ * Action retrieves `deviceInfo` from Cloud DB for Redis using `deviceId` received from an IoT trigger,
+ * supplement the information received from the IoT trigger, and store it in Cloud DB for MongoDB.
+ *
+ * You need to set Cloud IoT Core rules to send certain information through an IoT trigger.
+ *
+ * Input parameters that must be defined as action parameters
+ * @params {string} redisUrl: the host IP of the Redis server that the action queries `deviceInfo` from
+ * @params {string} mongoUrl: the host IP of the MongoDB server that the action saves the supplemented data to
+ */
 async function saveIotData(params) {
   console.log({...params});
   try {

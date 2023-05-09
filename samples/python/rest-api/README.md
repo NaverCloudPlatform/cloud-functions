@@ -61,7 +61,7 @@
 ## 액션 실행 결과 확인
 + 본 샘플 액션은 모든 경우의 에러 처리를 하고 있지 않으면, HTTP Status Code 또한 다소 간략히 표현되고 있습니다. 특히, DB 접근(CRUD) 작업과 관련하여 Python Exception을 모든 단계에서 처리하고 있지 않고 있으므로, 필요에 따라서 `raise Exception(...)` 구문을 이용하시는 것 또한 추천드립니다.
 
-+ 따라서 상기 `액션 Input Paramter`를 참고하여 생성, 조회, 갱신, 조회, 삭제와 같은 순서로 테스트를 진행하는 것을 추천드리며, 직접 Cloud DB MySQL 상품 DB에 접근 가능한 Application Server를 통해 확인할 수 있습니다.
++ 따라서 상기 `액션 Input Paramter`를 참고하여 생성, 조회, 갱신, 조회, 삭제와 같은 순서로 테스트를 진행하는 것을 추천드리며, 직접 Cloud DB MySQL 서비스 DB에 접근 가능한 Application Server를 통해 확인할 수 있습니다.
 
 + 또한 [Cloud DB for MySQL과 Cloud Functions를 활용한 DB 구성 및 CRUD 샘플 액션]()과 동일한 DB를 사용할 경우, 상호보완 적인 테스트 및 확인 또한 가능합니다.
   1. 웹 액션을 활용하여 학생 정보를 생성(POST)하고

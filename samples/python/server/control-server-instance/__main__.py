@@ -5,6 +5,7 @@ import requests
 import time
 
 
+# Signature is the value of `x-ncp-apigw-signature-v2` field in the header.
 def make_signature(url, timestamp, access_key, secret_key):
     timestamp = int(time.time() * 1000)
     timestamp = str(timestamp)
@@ -22,6 +23,7 @@ def make_signature(url, timestamp, access_key, secret_key):
     return sign_key
 
 
+# Header is required for authentication to call NAVER Cloud Platform API.
 def make_header(timestamp, access_key, sign_key):
     headers = {
         "Content-Type": "application/json; charset=utf-8",
@@ -30,6 +32,21 @@ def make_header(timestamp, access_key, sign_key):
         "x-ncp-apigw-signature-v2": sign_key,
     }
     return headers
+
+
+"""
+Action to start(or stop) server(VPC) instances using Server API
+
+Input parameters that must be defined as action parameters
+args:
+    access_key: NAVER Cloud Platform account access key used for API authentication
+    secret_key: NAVER Cloud Platform account secret key used for API authentication
+    base_url: https://ncloud.apigw.ntruss.com
+    api_url: `/vserver/v2/startServerInstances` or `/vserver/v2/stopServerInstances`
+    server_instances: list of instances' Id to start or stop (e.g. [11111111, 22222222])
+
+Please refer to the Server API guide for the accurate `base_url` and `ap_url`.
+"""
 
 
 def main(args):  # control vpc server instance

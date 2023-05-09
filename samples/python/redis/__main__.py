@@ -1,5 +1,16 @@
 import redis
 
+"""
+Action to store data(e.g. term and its definition) in Cloud DB for Redis
+
+Input parameters that must be defined as action parameters
+args:
+    redis_host (str): the host IP of the Redis server that the action will access
+    redis_port (int): the port number of Redis server (default: 6379)
+    term
+    definition
+"""
+
 
 def main(args):
     try:

@@ -5,6 +5,17 @@ endpoint = "https://kr.object.ncloudstorage.com"
 MAX_KEYS = 300
 
 
+"""
+Action to query all objects from Object Storage bucket
+
+Input parameters that must be defined as action parameters
+args:
+    access_key (str): NAVER Cloud Platform account access key used for API authentication
+    secret_key (str): NAVER Cloud Platform account secret key used for API authentication
+    bucket_name (str): name of a bucket to query objects
+"""
+
+
 def main(args):
     try:
         s3 = boto3.client(

@@ -15,6 +15,19 @@ def db_connect(cdb_host, cdb_user, cdb_pass, cdb_database):
     )
 
 
+"""
+Action to query all students from a table `Student(studentId, name, age)` on Cloud DB for MySQL
+
+Input parameters that must be defined as action parameters
+args:
+    cdb_host (str): private domain of a database on Cloud DB for MySQL
+    cdb_user (str): user of a database on Cloud DB for MySQL
+    cdb_pass (str): user password of a database on Cloud DB for MySQL
+    cdb_database (str): name of database on Cloud DB for MySQL
+    cdb_table (str): name of a table on Cloud DB for MySQL
+"""
+
+
 def main(args):
     try:
         if conn is None or not conn.open:

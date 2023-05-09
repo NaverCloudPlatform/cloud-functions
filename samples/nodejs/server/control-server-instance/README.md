@@ -1,5 +1,5 @@
 # Server Instance 시작/정지 샘플 액션
-## 연동 상품
+## 연동 서비스
 ### Server
 + [Server 사용 가이드](https://guide.ncloud-docs.com/docs/compute-server-virtualmachineserver-overview-vpc)
 + [NAVER Cloud Platform API 사용 가이드(인증 헤더 생성)](https://api.ncloud-docs.com/docs/common-ncpapi)
