@@ -43,7 +43,7 @@
 + `time` - 데이터 생성 시간
 
 
-### Redis, MongoDB 접속 정보 Paramter
+### Redis, MongoDB 접속 정보 Parameter
 + `access_info`
   + `redis_host` - 액션이 접근할 Redis Server IP 또는 Host name
     + [Redis Server 콘솔](https://console.ncloud.com/vpcCloudRedis/server)에서 서비스를 선택하여, DNS 값을 통해 확인할 수 있습니다.
