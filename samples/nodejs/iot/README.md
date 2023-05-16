@@ -42,7 +42,7 @@
 + `date` - 데이터 생성 날짜
 + `time` - 데이터 생성 시간
 
-### Redis, MongoDB 접속 정보 Paramter
+### Redis, MongoDB 접속 정보 Parameter
 + `redisUrl` - 액션이 접근할 Redis Server IP 또는 Host name
   + [Redis Server 콘솔](https://console.ncloud.com/vpcCloudRedis/server)에서 서비스를 선택하여, DNS 값을 통해 확인할 수 있습니다.
 + 상기의 DNS 값(문자열) 앞에 `redis://`를 추가하고 `Port 번호(default: 6379)`를 포함하여야 정상적인 접근이 가능하며, 자세한 내용은 [redis/node-redis GIT](https://github.com/redis/node-redis)을 참조하시길 바랍니다. 

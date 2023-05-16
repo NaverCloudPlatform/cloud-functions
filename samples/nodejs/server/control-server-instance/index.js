@@ -1,6 +1,7 @@
 const axios = require('axios');
 const CryptoJS = require('crypto-js');
 
+// Signature is the value of `x-ncp-apigw-signature-v2` field in the header.
 function makeSignature(url, timestamp, accessKey, secretKey) {
   const space = ' ',
     newLine = '\n',
@@ -20,6 +21,7 @@ function makeSignature(url, timestamp, accessKey, secretKey) {
   return hash.toString(CryptoJS.enc.Base64);
 }
 
+// Header is required for authentication to call NAVER Cloud Platform API.
 function makeHeader(timestamp, accessKey, signKey) {
   const headers = {
     'Content-Type': 'application/json; charset=utf-8',
@@ -31,6 +33,18 @@ function makeHeader(timestamp, accessKey, signKey) {
   return headers;
 }
 
+/**
+ * Action to start(or stop) server(VPC) instances using Server API
+ *
+ * Input parameters that must be defined as action parameters
+ * @params {string} accessKey: NAVER Cloud Platform account access key used for API authentication
+ * @params {string} secretKey: NAVER Cloud Platform account secret key used for API authentication
+ * @params {string} baseUrl: https://ncloud.apigw.ntruss.com
+ * @params {string} apiUrl: `/vserver/v2/startServerInstances` or `/vserver/v2/stopServerInstances`
+ * @params {array} serverInstances: list of instances' Id to start or stop (e.g. [11111111, 22222222])
+ *
+ * Please refer to the Server API guide for the accurate `baseUrl` and `apiUrl`.
+ */
 function controlVpcServerInstance(params) {
   let apiUrlWithParams = params.apiUrl;
 

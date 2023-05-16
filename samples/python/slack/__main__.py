@@ -2,14 +2,26 @@ import json
 import requests
 
 
+"""
+Action to send a notification to Slack when a Github event(e.g. push) information received from a Github trigger
+
+Input parameters that must be defined as action parameters
+args:
+    slack_url: slack webhook URL of a channel
+"""
+
+
 def main(args):
+    """
+    The following event information `repository, commits` comes from Github to a Github trigger.
+    """
     repo_name = args["repository"]["name"]
     commit_info = args["commits"][0]
     author = commit_info["author"]["name"]
     commit_msg = commit_info["message"]
 
     alert_data = {
-        "text": f"author({author}) commited on repo({repo_name}) with msg({commit_msg})"
+        "text": f"author({author}) committed on repo({repo_name}) with msg({commit_msg})"
     }
 
     try:

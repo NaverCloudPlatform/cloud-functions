@@ -56,6 +56,19 @@ def delete_student(table, student_id):
     conn.commit()
 
 
+"""
+Web Action which manipulates(CRUD) a table `Student(studentId, name, age)` on Cloud DB for MySQL
+
+Input parameters that must be defined as action parameters
+args:
+    cdb_host (str): private domain of a database on Cloud DB for MySQL
+    cdb_user (str): user of a database on Cloud DB for MySQL
+    cdb_pass (str): user password of a database on Cloud DB for MySQL
+    cdb_database (str): name of database on Cloud DB for MySQL
+    cdb_table (str): name of a table on Cloud DB for MySQL
+"""
+
+
 def main(args):
     method, path = args["__ow_method"], args["__ow_path"]
     path_components = path.split("/")
@@ -70,6 +83,7 @@ def main(args):
             )
 
         if len(path_components) == 2 and path_components[1] == "students":
+            # When called `POST  /students` with a body including `studentId`, `name`, `age` of a student to create
             encoded_body = args["__ow_body"]
             decoded_body = json.loads(base64.b64decode(encoded_body).decode("utf8"))
 
@@ -85,11 +99,13 @@ def main(args):
             student_id = path_components[2]
 
             if method == "get":
+                # When called `GET  /students/{studentId}`
                 student_info = retrieve_student(args["cdb_table"], student_id)
 
                 return make_response(200, {"student_info": student_info})
 
             elif method == "put":
+                # when called `PUT  /students/{studentId}` with a body including `name`, `age` to update
                 encoded_body = args["__ow_body"]
                 decoded_body = json.loads(base64.b64decode(encoded_body).decode("utf8"))
 
@@ -101,6 +117,7 @@ def main(args):
                 return make_response(200, {"done": True})
 
             elif method == "delete":
+                # when called `DELETE  /students/{studentId}`
                 delete_student(args["cdb_table"], student_id)
 
                 return make_response(200, {"done": True})

@@ -1,6 +1,14 @@
 const redis = require('redis');
 let client;
 
+/**
+ * Action to store data(e.g. term and its definition) in Cloud DB for Redis
+ *
+ * Input parameters that must be defined as action parameters
+ * @params {string} redisUrl: the host IP of the Redis server that the action will access
+ * @params {} term
+ * @params {} definition
+ */
 function saveWord(params) {
   client = redis.createClient({
     url: params.redisUrl,
