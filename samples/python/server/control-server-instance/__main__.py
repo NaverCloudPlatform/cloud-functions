@@ -39,13 +39,13 @@ Action to start(or stop) server(VPC) instances using Server API
 
 Input parameters that must be defined as action parameters
 args:
-    access_key: NAVER Cloud Platform account access key used for API authentication
-    secret_key: NAVER Cloud Platform account secret key used for API authentication
-    base_url: https://ncloud.apigw.ntruss.com
-    api_url: `/vserver/v2/startServerInstances` or `/vserver/v2/stopServerInstances`
-    server_instances: list of instances' Id to start or stop (e.g. [11111111, 22222222])
+    access_key (str): NAVER Cloud Platform account access key used for API authentication
+    secret_key (str): NAVER Cloud Platform account secret key used for API authentication
+    base_url (str): https://ncloud.apigw.ntruss.com
+    api_url (str): `/vserver/v2/startServerInstances` or `/vserver/v2/stopServerInstances`
+    server_instances (list): list of instances' Id to start or stop (e.g. [11111111, 22222222])
 
-Please refer to the Server API guide for the accurate `base_url` and `ap_url`.
+Please refer to the Server API guide for the accurate `base_url` and `api_url`.
 """
 
 
