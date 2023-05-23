@@ -1,0 +1,22 @@
+{
+  "name": "object-storage-logging-rest-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "2.6.2"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1379.0",
+    "axios": "^1.4.0"
+  }
+}
