@@ -30,5 +30,5 @@ def main(args):
         return {"done": True}
 
     except Exception as e:
-        return {"done": False, "error_message": e}
+        return {"done": False, "error_message": str(e)}
 
