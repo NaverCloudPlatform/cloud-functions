@@ -1,3 +1,4 @@
+import platform
 import boto3
 
 service_name = "s3"
@@ -18,6 +19,11 @@ args:
 
 def main(args):
     try:
+        major, minor, path = platform.python_version_tuple()
+        if major == "3" and minor == "11":
+            import collections
+            collections.Callable = collections.abc.Callable
+            
         s3 = boto3.client(
             service_name,
             endpoint_url=endpoint,
@@ -39,4 +45,4 @@ def main(args):
         return {"done": True, "objects": object_list}
 
     except Exception as e:
-        return {"done": False, "error_message": e}
+        return {"done": False, "error_message": str(e)}
