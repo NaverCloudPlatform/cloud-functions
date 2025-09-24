@@ -69,7 +69,7 @@
 
 ---
 ## 사용법
-1. 사용하고자 하는 런타임(python:3.6 또는 python:3.7)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성
+1. 사용하고자 하는 런타임(python:3.13)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성
 2. python으로 Redis, MongoDB 서버 접근 및 작업을 위한 `redis`, `pymongo` 라이브러리 설치 - **pip install redis pymongo**, 
 3. `zip -r action.zip *`
 4. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성

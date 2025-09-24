@@ -24,7 +24,7 @@
 
 ---
 ## 사용법
-1. 사용하고자 하는 런타임(python:3.6 또는 python:3.7)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성
+1. 사용하고자 하는 런타임(python:3.13)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성
   + 파이썬 런타임에서 기본적으로 제공하는 reqeusts 라이브러리 외에 `boto3==1.6.19`를 [Cloud Functions Python 가이드](https://guide.ncloud-docs.com/docs/compute-compute-15-2-2)와 [Object Storage Python SDK](https://guide.ncloud-docs.com/docs/storage-storage-8-2)를 참조하여 설치하여야 합니다.
 2. `zip -r action.zip *`
 3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성
