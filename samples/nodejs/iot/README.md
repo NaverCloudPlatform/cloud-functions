@@ -57,7 +57,7 @@
   + 자세한 내용은 [redis/node-redis GIT](https://github.com/redis/node-redis)을 참조하시길 바랍니다. 
 2. `zip -r action.zip *`
 3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드
-4. 액션 생성 시 **nodejs:12** 런타임을 선택하여야 *redis* 패키지를 정상 이용할 수 있습니다.
+4. 액션 생성 시 **nodejs:22** 런타임을 선택하여야 *redis* 패키지를 정상 이용할 수 있습니다.
 5. Cloud Functions IoT 트리거를 생성 및 액션과 연결합니다.
 
 ---
