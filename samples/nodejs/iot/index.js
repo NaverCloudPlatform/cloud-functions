@@ -23,7 +23,7 @@ async function getDeviceInfo(deviceId) {
 }
 
 /**
- * Action retrieves `deviceInfo` from Cloud DB for Redis using `deviceId` received from an IoT trigger,
+ * Action retrieves `deviceInfo` from Cloud DB for Cache using `deviceId` received from an IoT trigger,
  * supplement the information received from the IoT trigger, and store it in Cloud DB for MongoDB.
  *
  * You need to set Cloud IoT Core rules to send certain information through an IoT trigger.

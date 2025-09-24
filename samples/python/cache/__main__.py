@@ -1,7 +1,7 @@
 import redis
 
 """
-Action to store data(e.g. term and its definition) in Cloud DB for Redis
+Action to store data(e.g., term and its definition) in Cloud DB for Cache
 
 Input parameters that must be defined as action parameters
 args:
