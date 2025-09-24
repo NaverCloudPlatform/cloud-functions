@@ -24,7 +24,7 @@
 
 ---
 ## 사용법
-1. 사용하고자 하는 런타임(python:3.6 또는 python:3.7)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성
+1. 사용하고자 하는 런타임(python:3.13)과 동일한 버전의 python 가상 환경 *virtualenv*를 생성
    + 본 샘플 액션에서 이용되는 라이브러리들은 파이썬 런타임에서 기본적으로 제공되고 있으므로 `.zip` 파일 업로드가 아니라, 코드만을 콘솔 에디터에 `복사-붙여넣기`하여 액션을 생성 및 실행할 수도 있습니다.
 2. `zip -r action.zip *`
 3. [NAVER Cloud Platform Console](console.ncloud.com)에서 액션 생성 시 `action.zip` 파일 업로드하여 Action 생성
