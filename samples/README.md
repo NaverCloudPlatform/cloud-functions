@@ -19,7 +19,6 @@
 
 | 샘플 | 설명 | 연동 서비스 | 바로가기 |
 |---|---|---|---|
-| iot | Cloud IoT Core 데이터 보강 및 저장 샘플 액션 | [Cloud IoT Core](https://www.ncloud.com/product/iot/cloudIotCore)<br/>[Cloud DB for Cache](https://www.ncloud.com/product/database/cloudDbCache)<br/>[Cloud DB for MongoDB](https://www.ncloud.com/product/database/cloudDbMongoDB) | [NodeJS](./nodejs/iot/index.js) <br/>[Python](./python/iot/__main__.py) |
 | mongodb | MongoDB 데이터 저장 샘플 액션 | [Cloud DB for MongoDB](https://www.ncloud.com/product/database/cloudDbMongoDB) | [NodeJS](./nodejs/mongodb/index.js) <br/>[Python](./python/mongodb/__main__.py) |
 | mysql | MySQL 데이터 CRUD 수행 샘플 액션 | [Cloud DB for MySQL](https://www.ncloud.com/product/database/cloudDbMysql) | [NodeJS](./nodejs/mysql/db-crud) <br/>[Python](./python/mysql/db-crud) |
 | object-storage | 버킷/오브젝트 생성/조회/삭제 샘플 액션 | [Object Storage](https://www.ncloud.com/product/storage/objectStorage) | [NodeJS](./nodejs/object-storage) <br/>[Python](./python/object-storage) |
