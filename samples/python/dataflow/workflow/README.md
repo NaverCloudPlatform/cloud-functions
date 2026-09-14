@@ -21,28 +21,29 @@
 
 + [Data Flow API 가이드](https://api.ncloud-docs.com/docs/analytics-dataflow)
 
-+ [Cloud Functions Object Storage 트리거 가이드](https://guide.ncloud-docs.com/docs/cloudfunctions-objectstorage-vpc)
-
 ---
 ## 액션 Input Parameter
 ### Data Flow API 호출을 위한 공통 Input Parameter (액션 기본 파라미터로 등록)
-+ `NCLOUD_ACCESS_KEY` - NAVER Cloud Platform API 인증키 정보로, `[NAVER Cloud Platform](ncloud.com) - 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
-+ `NCLOUD_SECRET_KEY` - NAVER Cloud Platform API 인증키 정보로, `[NAVER Cloud Platform](ncloud.com) - 마이페이지 - 인증키관리`에서 발급 및 확인 가능합니다.
++ `NCLOUD_ACCESS_KEY` - NAVER Cloud Platform API 인증키 정보로, [NAVER Cloud Platform](ncloud.com) - 마이페이지 - 인증키관리 혹은 NCP Sub Account 상품에서 발급 및 확인 가능합니다.
++ `NCLOUD_SECRET_KEY` - NAVER Cloud Platform API 인증키 정보로, [NAVER Cloud Platform](ncloud.com) - 마이페이지 - 인증키관리 혹은 NCP Sub Account 상품에서 발급 및 확인 가능합니다.
 + `DATAFLOW_WORKFLOW_ID` - 실행할 Data Flow 워크플로 ID. Data Flow 콘솔 > Trigger > 트리거 상세 > **연결된 워크플로**에서 복사할 수 있습니다.
 
 ### 워크플로 실행(execute-workflow)
 + 추가 Input Parameter 없음. `DATAFLOW_WORKFLOW_ID`에 지정한 워크플로를 실행합니다.
-+ Object Storage 트리거가 전달하는 이벤트 본문(버킷 이름, 오브젝트 키 등)은 본 샘플에서 사용하지 않습니다. 워크플로 실행에 이벤트 데이터가 필요하면 `payload`에 추가하여 확장할 수 있습니다.
++ Object Storage 트리거가 전달하는 이벤트 본문(버킷 이름, 오브젝트 키 등)은 본 샘플에서 사용하지 않습니다.
 
 ---
 ## 사용법
 1. Data Flow 콘솔에서 실행 유형이 **이벤트**인 트리거를 생성하고, 실행할 워크플로에 연결합니다.
-2. Cloud Functions 콘솔에서 Python 런타임(python:3.13)으로 액션을 생성하고 `execute-workflow/__main__.py` 내용을 소스 코드에 붙여 넣습니다.
-   + 파이썬 런타임에서 기본 제공하는 `requests` 라이브러리만 사용하므로 별도 패키징(zip)이 필요하지 않습니다.
-   + Data Flow API 호스트(`API_HOST`)는 소스 상단 상수로 고정되어 있습니다. 다른 환경으로 보내야 하면 이 값을 수정합니다.
-3. 액션 **기본 파라미터**에 `NCLOUD_ACCESS_KEY`, `NCLOUD_SECRET_KEY`, `DATAFLOW_WORKFLOW_ID`를 등록합니다.
-4. Cloud Functions 콘솔에서 Object Storage 트리거를 생성하고(이벤트 타입 `ObjectCreated:PUT`, 대상 버킷 지정), 본 액션에 연결합니다.
-5. 지정한 버킷에 파일을 업로드하면 액션이 실행되어 Data Flow 워크플로 실행이 요청됩니다.
+2. Cloud Functions 콘솔에서 액션을 생성하는 아래의 세 가지 방법 중 하나를 수행합니다.
+  2-1. Python 런타임(python:3.13)으로 액션을 생성하고 `execute-workflow/__main__.py` 내용을 소스 코드에 붙여 넣습니다.
+  2-2. Cloud Functions의 Action - Quick Start에서 Data Flow Cloud Functions Trigger를 선택합니다.
+  2-3.  Cloud Functions의 Action - Action 생성 - 코드 템플릿에서 Data Flow Cloud Functions Trigger를 선택합니다.
+5. 액션 **기본 파라미터**에 `NCLOUD_ACCESS_KEY`, `NCLOUD_SECRET_KEY`, `DATAFLOW_WORKFLOW_ID`를 등록합니다.(2-2 혹은 2-3번으로 진행했다면 기본 파라미터가 기등록되어 있습니다.)
+6. 기본 파라미터 값을 채워줍니다.
+7. 기본 파라미터 내의 `NCLOUD_ACCESS_KEY`, `NCLOUD_SECRET_KEY`에 암호화가 필요하다면 액션 수정의 디폴트 파라미터에서 암호화를 ON하여 적용합니다.
+8. Cloud Functions 콘솔에서 Object Storage 트리거를 생성하고(이벤트 타입 `ObjectCreated:PUT`, 대상 버킷 지정), 본 액션에 연결합니다.
+9. 지정한 버킷에 파일을 업로드하면 액션이 실행되어 Data Flow 워크플로 실행이 요청됩니다.
 
 ---
 ## 액션 실행 결과 확인
