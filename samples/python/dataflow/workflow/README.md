@@ -36,7 +36,7 @@
 ## 사용법
 1. Data Flow 콘솔에서 실행 유형이 **이벤트**인 트리거를 생성하고, 실행할 워크플로에 연결합니다.
 2. Cloud Functions 콘솔에서 액션을 생성하는 아래의 세 가지 방법 중 하나를 수행합니다.
-   1. Python 런타임(python:3.13)으로 액션을 생성하고 `execute-workflow/__main__.py` 내용을 소스 코드에 붙여 넣습니다.
+   1. Python 런타임으로 액션을 생성하고 `execute-workflow/__main__.py` 내용을 소스 코드에 붙여 넣습니다.
    2. Cloud Functions의 Action - Quick Start에서 Data Flow Cloud Functions Trigger를 선택합니다.
    3.  Cloud Functions의 Action - Action 생성 - 코드 템플릿에서 Data Flow Cloud Functions Trigger를 선택합니다.
 5. 액션 **기본 파라미터**에 `NCLOUD_ACCESS_KEY`(암호화를 권장합니다), `NCLOUD_SECRET_KEY`(암호화를 권장합니다), `DATAFLOW_WORKFLOW_ID`를 등록합니다.(2-ii 혹은 2-iii번으로 진행했다면 기본 파라미터가 기등록되어 있습니다.)
